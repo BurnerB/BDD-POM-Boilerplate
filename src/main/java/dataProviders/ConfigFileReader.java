@@ -70,7 +70,7 @@ public class ConfigFileReader {
         else throw new RuntimeException("Environment Type Key value in Configuration.properties is not matched : " + environmentName);
     }
 
-//    Retrieve the property using getProperty method of Properties class. Null check is performed and in case of null by default value is returned as true. In case of not null, String value is parsed to Boolean.
+//    getProperty method of Properties class. Null check is performed and in case of null by default value is returned as true. In case of not null, String value is parsed to Boolean.
     public Boolean getBrowserWindowSize() {
         String windowSize = properties.getProperty("windowMaximize");
         if(windowSize != null) return Boolean.valueOf(windowSize);
